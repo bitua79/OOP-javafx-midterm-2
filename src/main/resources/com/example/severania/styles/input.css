@@ -1,0 +1,78 @@
+
+/*Label*/
+.label {
+    -fx-text-fill: linear-gradient(to left, dodgerblue, blueviolet);
+    -fx-font-family: "Ace Records";
+}
+.label :hover {
+    -fx-effect: dropshadow(gaussian, navy, 2, 0.2, 2, 2);
+    -fx-translate-y: 3;
+}
+
+/*Text field*/
+.text-field {
+    -fx-text-fill: linear-gradient(to right, dodgerblue, blueviolet);
+    -fx-font-family: "Ace Records";
+    -fx-background-color: white;
+    -fx-border-radius: 15px;
+    -fx-border-width: 4;
+    -fx-opacity: 0.4;
+}
+
+/*spinner*/
+.spinner {
+    -fx-background-radius: 30 30 30 30;
+    -fx-background-color: white;
+    -fx-opacity: 0.5;
+}
+.spinner .increment-arrow-button {
+    -fx-background-color: linear-gradient(to right, dodgerblue, blueviolet);
+    -fx-background-radius: 0 30 30 0;
+}
+.spinner .increment-arrow-button .increment-arrow{
+    -fx-background-color: navy;
+}
+.spinner .increment-arrow-button:pressed .increment-arrow {
+    -fx-rotate: -25deg;
+}
+.spinner .decrement-arrow-button {
+    -fx-background-color: linear-gradient(to right, dodgerblue, blueviolet);
+    -fx-background-radius: 30 0 0 30;
+}
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: navy;
+}
+.spinner .decrement-arrow-button:pressed .decrement-arrow {
+    -fx-rotate: 25deg;
+}
+.spinner .text-field{
+    -fx-text-fill: linear-gradient(to right, dodgerblue, blueviolet);
+    -fx-background-radius: 30 30 30 30;
+    -fx-font-family: "Ace Records";
+    -fx-background-color: white;
+    -fx-alignment : center;
+    -fx-font-size: 20;
+    -fx-opacity: 0.5;
+}
+
+/*button*/
+.button{
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-border-color: linear-gradient(to right, dodgerblue, blueviolet);
+    -fx-text-fill: linear-gradient(to right, dodgerblue, blueviolet);
+    -fx-background-color: transparent;
+    -fx-font-family: "Ace Records";
+    -fx-padding: 10 20 10 20;
+    -fx-border-radius: 15px;
+    -fx-border-width: 4;
+    -fx-font-size: 20;
+}
+.button:pressed {
+    -fx-translate-y: 2;
+    -fx-font-size: 20;
+}
+.button:hover {
+    -fx-effect: dropshadow(gaussian, navy, 2, 0.2, 2, 2);
+    -fx-font-size: 20;
+
+}

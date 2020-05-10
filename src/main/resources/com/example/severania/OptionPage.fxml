@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="412.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="300.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.severania.Controller">
+   <children>
+      <ImageView fitHeight="522.0" fitWidth="735.0" layoutX="-52.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/3_options.png" />
+         </image>
+         <effect>
+            <DropShadow height="255.0" radius="127.0" spread="0.63" width="255.0">
+               <color>
+                  <Color red="0.48403996229171753" green="0.5491674542427063" blue="0.7631579041481018" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Button fx:id="optionBack" layoutX="551.0" layoutY="334.0" mnemonicParsing="false" onAction="#backToMenu" styleClass="button" stylesheets="@styles/options.css" text="Back">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="mute" layoutX="353.0" layoutY="221.0" mnemonicParsing="false" onAction="#setMute" prefHeight="38.0" prefWidth="142.0" styleClass="check-box" stylesheets="@styles/options.css" text="Music">
+         <font>
+            <Font name="Cooper Black" size="25.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="SFX" layoutX="353.0" layoutY="270.0" mnemonicParsing="false" onAction="#setSFXMute" styleClass="check-box" stylesheets="@styles/options.css" text="SFX">
+         <font>
+            <Font name="Cooper Black" size="25.0" />
+         </font>
+      </CheckBox>
+      <Slider fx:id="volume" layoutX="355.0" layoutY="173.0" onKeyPressed="#changeVolume" onKeyReleased="#changeVolume" onKeyTyped="#changeVolume" onMouseClicked="#changeVolume" onMouseDragEntered="#changeVolume" onMouseDragExited="#changeVolume" onMouseDragOver="#changeVolume" onMouseDragReleased="#changeVolume" onMouseDragged="#changeVolume" onMouseEntered="#changeVolume" onMouseExited="#changeVolume" onMouseMoved="#changeVolume" onMousePressed="#changeVolume" onMouseReleased="#changeVolume" onScroll="#changeVolume" prefHeight="42.0" prefWidth="196.0" stylesheets="@styles/options.css" value="100.0" />
+      <Label layoutX="251.0" layoutY="160.0" styleClass="label" stylesheets="@styles/options.css" text="Volume ">
+         <font>
+            <Font name="Cooper Black" size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/optionTitle.png" />
+         </image>
+         <effect>
+            <Reflection bottomOpacity="0.08" fraction="1.0" topOpacity="0.23" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

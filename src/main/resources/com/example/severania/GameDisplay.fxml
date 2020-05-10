@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="gamePane" maxHeight="800.0" maxWidth="1400.0" minHeight="800.0" minWidth="1400.0" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.severania.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="linear-gradient(to right, #145092, #572498)" height="800.0" stroke="transparent" strokeType="INSIDE" width="1400.0" />
+      <ImageView fitHeight="800.0" fitWidth="1415.0" layoutY="1.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/6_game.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="guidePane" layoutX="-45.0" layoutY="470.0" prefHeight="260.0" prefWidth="405.0">
+         <children>
+            <ImageView fitHeight="310.0" fitWidth="450.0" layoutX="25.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photos/guide.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="sentences" alignment="CENTER" layoutX="170.0" layoutY="40.0" prefHeight="260.0" prefWidth="260.0" stylesheets="@styles/gameDisplay.css" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <ImageView fx:id="guidePhoto" fitHeight="270.0" fitWidth="245.0" layoutX="195.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photos/soldier.png" />
+               </image></ImageView>
+            <Button id="buttonOnPane" fx:id="next" layoutX="55.0" layoutY="255.0" mnemonicParsing="false" onAction="#changeGuidePhoto" prefHeight="25.0" prefWidth="80.0" stylesheets="@styles/gameDisplay.css" text="next">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="buyOpen" layoutX="40.0" layoutY="60.0" mnemonicParsing="false" onAction="#buySetting" stylesheets="@styles/gameDisplay.css" text="Join a new friend">
+         <font>
+            <Font name="Cooper Black" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="attackOpen" layoutX="40.0" layoutY="120.0" mnemonicParsing="false" onAction="#attackSetting" stylesheets="@styles/gameDisplay.css" text="Get help from">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="randomArrange" layoutX="40.0" layoutY="180.0" mnemonicParsing="false" stylesheets="@styles/gameDisplay.css" text="Random arrangement">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="buyPane" layoutX="-380.0" layoutY="180.0" opacity="0.71" prefHeight="280.0" prefWidth="320.0" styleClass="anchorPane" stylesheets="@styles/gameDisplay.css">
+         <children>
+            <Spinner initialValue="0" layoutX="17.0" layoutY="34.0" max="22" min="0" styleClass="split-arrows-horizontal" stylesheets="@styles/gameDisplay.css" />
+            <Spinner initialValue="0" layoutX="17.0" layoutY="95.0" max="22" min="0" styleClass="split-arrows-horizontal" stylesheets="@styles/gameDisplay.css" />
+            <Label id="labelOnPane" layoutX="39.0" layoutY="76.0" stylesheets="@styles/gameDisplay.css" text="Choose the row here" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label id="labelOnPane" layoutX="40.0" layoutY="14.0" stylesheets="@styles/gameDisplay.css" text="Choose the row here" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button id="buttonOnPane" fx:id="buySoli_soldier" graphicTextGap="3.0" layoutX="45.0" layoutY="140.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="115.0" stylesheets="@styles/gameDisplay.css" text="Soli">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/soldier.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="buttonOnPane" fx:id="buyKeni_knight" layoutX="170.0" layoutY="140.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="115.0" stylesheets="@styles/gameDisplay.css" text="Keni">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/knight.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="buttonOnPane" fx:id="buyRooki_rook" layoutX="45.0" layoutY="211.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="115.0" stylesheets="@styles/gameDisplay.css" text="Rooki">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/rook.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="buttonOnPane" fx:id="buyKino_king" layoutX="170.0" layoutY="210.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="115.0" stylesheets="@styles/gameDisplay.css" text="Kino">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/king.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="235.0" layoutY="36.0" text="4000 $">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="attackPane" layoutX="25.0" layoutY="250.0" opacity="0.71" prefHeight="210.0" prefWidth="310.0" styleClass="anchorPane" stylesheets="@styles/gameDisplay.css">
+         <children>
+            <Label id="labelOnPane" layoutX="14.0" layoutY="14.0" stylesheets="@styles/gameDisplay.css" text="Choose a friend:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button id="buttonOnPane" fx:id="attackSoli_soldier" graphicTextGap="3.0" layoutX="45.0" layoutY="45.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="115.0" stylesheets="@styles/gameDisplay.css" text="Soli">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/soldier.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="buttonOnPane" fx:id="attackKeni_knight" layoutX="180.0" layoutY="45.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="115.0" stylesheets="@styles/gameDisplay.css" text="Keni">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/knight.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="buttonOnPane" fx:id="attackRooki_rook" layoutX="45.0" layoutY="120.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="115.0" stylesheets="@styles/gameDisplay.css" text="Rooki">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/rook.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="buttonOnPane" fx:id="attackKino_king" layoutX="180.0" layoutY="120.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="115.0" stylesheets="@styles/gameDisplay.css" text="Kino">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/king.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="restart" layoutX="1305.0" mnemonicParsing="false" onAction="#restartTheGame" stylesheets="@styles/gameDisplay.css" text="Restart">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="game_menu" layoutX="1305.0" mnemonicParsing="false" onAction="#backToMenu" stylesheets="@styles/gameDisplay.css" text="Menu">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="game_mute" graphicTextGap="2.0" layoutX="1305.0" mnemonicParsing="false" onAction="#setMute" prefHeight="38.0" prefWidth="76.0" stylesheets="@styles/gameDisplay.css" text="Mute" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Cooper Black" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="game_exit" layoutX="1305.0" mnemonicParsing="false" onAction="#exitProgram" stylesheets="@styles/gameDisplay.css" text="Exit">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Button id="container" fx:id="game_OptionSetting" layoutX="1300.0" mnemonicParsing="false" onAction="#showSetting" prefHeight="90.0" prefWidth="115.0" stylesheets="@styles/gameDisplay.css">
+         <effect>
+            <BoxBlur height="44.46" width="53.57" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="90.0" fitWidth="99.0" layoutX="1305.0" onMouseClicked="#showSetting" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/openSetting.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

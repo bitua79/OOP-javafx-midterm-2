@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.stage.Screen?>
+<AnchorPane maxHeight="530.0" maxWidth="800.0" minHeight="530.0" minWidth="800.0"
+            prefHeight="530.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.severania.Controller">
+
+    <children>
+        <ImageView fitHeight="543.0" fitWidth="819.0" layoutX="-14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@photos/4_input.png"/>
+            </image>
+        </ImageView>
+        <TextField fx:id="nameField" layoutX="43.0" layoutY="84.0" opacity="0.45" prefHeight="12.0" prefWidth="190.0"
+                   styleClass="text-field" stylesheets="@styles/input.css">
+            <font>
+                <Font name="Cooper Black" size="12.0"/>
+            </font>
+        </TextField>
+        <Spinner fx:id="sizeSpinner" amountToStepBy="1" editable="true" initialValue="12" layoutX="40.0" layoutY="165.0"
+                 max="22" min="12" opacity="0.5" prefHeight="33.0" prefWidth="197.0"
+                 styleClass="split-arrows-horizontal" stylesheets="@styles/input.css"/>
+        <Label layoutX="39.0" layoutY="40.0" stylesheets="@styles/input.css" text="Please enter your name">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Label>
+        <Label layoutX="39.0" layoutY="129.0" stylesheets="@styles/input.css" text="Please enter your prefer size">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Label>
+        <Button layoutX="666.0" layoutY="458.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="58.0"
+                prefWidth="112.0" stylesheets="@styles/input.css" text="Back"/>
+        <Button fx:id="startMoviePlay" layoutX="39.0" layoutY="455.0" mnemonicParsing="false" onAction="#moviePlay"
+                prefHeight="47.0" prefWidth="141.0" stylesheets="@styles/input.css" text="Start Play">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Spinner fx:id="limitRange" editable="true" layoutX="39.0" layoutY="310.0" max="400" min="20" prefHeight="25.0"
+                 prefWidth="214.0" styleClass="split-arrows-horizontal" stylesheets="@styles/input.css"/>
+        <Label layoutX="39.0" layoutY="268.0" stylesheets="@styles/input.css" text="Limited game measure">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Label>
+        <CheckBox fx:id="isLimited" layoutX="273.0" layoutY="313.0" mnemonicParsing="false" onAction="#limit"
+                  stylesheets="@styles/options.css"/>
+    </children>
+</AnchorPane>
