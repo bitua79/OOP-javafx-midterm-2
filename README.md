@@ -36,31 +36,31 @@ This JavaFX-based game combines elements of Sea Battle with chess-like character
 - Menu and Setting
   
 <p align="center">
-   <img src="screenshots/menu.png" alt="Menu Screenshot" width="300"/>
-   <img src="screenshots/setting.png" alt="Setting Screenshot" width="300"/>
-   <img src="screenshots/game setting.png" alt="Game Setting Screenshot" width="300"/>
+   <img src="screenshots/menu.png" alt="Menu Screenshot" width="400"/>
+   <img src="screenshots/setting.png" alt="Setting Screenshot" width="400"/>
+   <img src="screenshots/game setting.png" alt="Game Setting Screenshot" width="400"/>
 </p>
 
 - Loading
 
 <p align="center">
-   <img src="screenshots/loading0.png" alt="Loading1 Screenshot" width="300"/>
-   <img src="screenshots/loading1.png" alt="Loading2 Screenshot" width="300"/>
+   <img src="screenshots/loading0.png" alt="Loading1 Screenshot" width="400"/>
+   <img src="screenshots/loading1.png" alt="Loading2 Screenshot" width="400"/>
 </p>
 
 - Story
   
 <p align="center">
-  <img src="screenshots/story1.png" alt="Story1 Screenshot" width="300"/>
-  <img src="screenshots/story2.png" alt="Story2 Screenshot" width="300"/>
+  <img src="screenshots/story1.png" alt="Story1 Screenshot" width="400"/>
+  <img src="screenshots/story2.png" alt="Story2 Screenshot" width="400"/>
 </p>
 
 - Game Display and Guide
   
 <p align="center">
-  <img src="screenshots/guide.png" alt="Guide Screenshot" width="300"/>
-  <img src="screenshots/game1.png" alt="Game1 Screenshot" width="300"/>
-  <img src="screenshots/game2.png" alt="Game2 Screenshot" width="300"/>
+  <img src="screenshots/guide.png" alt="Guide Screenshot" width="400"/>
+  <img src="screenshots/game1.png" alt="Game1 Screenshot" width="400"/>
+  <img src="screenshots/game2.png" alt="Game2 Screenshot" width="400"/>
 </p>
 
 ## How to Run
