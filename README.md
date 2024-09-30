@@ -75,7 +75,7 @@ This JavaFX-based game combines elements of Sea Battle with chess-like character
 3. Run the project to start the game and explore all the new features.
 
 ## Acknowledgments
-I would like to extend my gratitude to **Dr. Mostafa Nouri Baygi [Webpage](http://prof.um.ac.ir/nouribaygi)** for their guidance and support throughout this project.
+I would like to extend my gratitude to **Professor Mostafa Nouri Baygi ([Webpage](http://prof.um.ac.ir/nouribaygi))** for their guidance and support throughout this project.
 
 ## License
 
